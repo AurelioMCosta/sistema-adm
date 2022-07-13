@@ -15,10 +15,9 @@ class UserService
 
     public function getAll(string $filter = ''): array
     {
-        //$users = $this->repository->getAll($filter);
+        $users = $this->repository->getAll($filter);
 
-        return $this->repository->getAll($filter);
-        //convertItemsOfArrayToObject($users);
+        return convertItemsOfArrayToObject($users);
     }
 
     public function findById(string $id): object

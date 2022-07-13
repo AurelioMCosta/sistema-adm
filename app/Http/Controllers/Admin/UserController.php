@@ -18,7 +18,7 @@ class UserController extends Controller
 
         $users = $this->service->getAll();
 
-        dd($users);
+        //dd($users);
 
         return view('admin.users.index', compact('users'));
     }
